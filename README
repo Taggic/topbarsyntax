@@ -1,0 +1,35 @@
+/** 
+*  topbarsyntax Plugin: delivers css based menu on dw page wherever you want to have it 
+*
+* @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
+* @author     Taggic <taggic@t-online.de>
+*/
+
+Intro
+------ 
+This syntax plugin is derived from simple template created by Michael Klier and 
+modified to deliver vertical css menues. It delivers you the possibility to place
+it within the page syntax of dw wherever you might need it.
+ 
+Syntax
+------- 
+There are two parameters. The first defines the width of the menu. There are all 
+css compatible width values allowed (like px, %, em). The second parameter configures 
+the menu orientation (h = horizontal, v = vertical).
+ 
+  horizontal menu bar syntax = {{topbarsyntax>850px,v}} 
+  vertical menu bar syntax    = {{topbarsyntax>12em,h}} 
+
+Installation
+------------
+ Just download and extract it as folder “topbarsyntax” into your “\lib\plugins” 
+ directory.
+
+
+Configuration
+--------------
+CSS file can be modified to your needs according menu-item width, colors, etc.
+
+Examples/Usage
+--------------
+for examples please refer to: http://www.fristercons.de/fcon/doku.php?id=tips:tips_topbar

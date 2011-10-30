@@ -1,0 +1,9 @@
+# PLUGIN INFO - DO NOT EDIT!
+
+base    topbarsyntax
+author  Taggic
+email   taggic@t-online.de
+date    2011-10-30
+name    topbarsyntax
+desc    delivers horizontal & vertical css based menu on a page wherever you want to have it
+url     http://www.fristercons.de/fcon/doku.php?id=tips:tips_topbar
