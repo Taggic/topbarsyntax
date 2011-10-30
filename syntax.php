@@ -60,8 +60,8 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
         $width = $data[0];   // width of the main bar
         $orient = $data[1];  // orientation of the menu
 
-        if ($width === false) { $width = "100%"; }
-        if ($orient === false) { $orient = "h"; }
+        if (!$width) { $width = "100%"; }
+        if (!$orient) { $orient = "h"; }
         global $ID;
      
         $found = false;
@@ -81,9 +81,13 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
 //              $renderer->doc .= "<div>orient = ".$orient.'</div><br />';
               $renderer->doc .= '<div id="tpl_smplbar_navi1" style="width:'.$width.'">'.p_wiki_xhtml($tbar,'',false).'</div>'.NL;
               }
-            else {
+            else if ($orient === "vl") {
 //              $renderer->doc .= "<div>orient = ".$orient.'</div><br />';
               $renderer->doc .= '<div id="tpl_smplbar_navi2" style="width:'.$width.'">'.p_wiki_xhtml($tbar,'',true).'</div>'.NL;
+            }
+            else {
+//              $renderer->doc .= "<div>orient = ".$orient.'</div><br />';
+              $renderer->doc .= '<div id="tpl_smplbar_navi3" style="width:'.$width.'">'.p_wiki_xhtml($tbar,'',true).'</div>'.NL;
             }
             
         }

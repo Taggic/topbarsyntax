@@ -15,10 +15,11 @@ Syntax
 ------- 
 There are two parameters. The first defines the width of the menu. There are all 
 css compatible width values allowed (like px, %, em). The second parameter configures 
-the menu orientation (h = horizontal, v = vertical).
+the menu orientation (h = horizontal, vl = vertical, left sided, vr = vertical, right sided).
  
-  horizontal menu bar syntax = {{topbarsyntax>850px,v}} 
-  vertical menu bar syntax    = {{topbarsyntax>12em,h}} 
+  horizontal menu bar syntax             = {{topbarsyntax>850px,h}} 
+  left sided vertical menu bar syntax    = {{topbarsyntax>12em,vl}}
+  right sided vertical menu bar syntax    = {{topbarsyntax>12em,vr}} 
 
 Installation
 ------------

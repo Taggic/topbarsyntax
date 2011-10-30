@@ -8,7 +8,7 @@
 /* ---------- Navigation horizontal ----------- */
 div.dokuwiki div#tpl_smplbar_navi1 {
   border: 1px solid __border__;
-  background-color: #eeeeee;
+  background-color: #ddddff;
   margin-left: auto;
   height: 1.8em;
   margin: 0.2em 0 0.5em 0;
@@ -20,7 +20,7 @@ div.dokuwiki div#tpl_smplbar_navi1 {
 }
  
 div.dokuwiki div#tpl_smplbar_navi1 ul {
-  background-color: #eeeeee;
+  background-color: #ddddff;
   list-style: none;
   float: left;
   margin: 0;
@@ -99,10 +99,10 @@ div.dokuwiki div#tpl_smplbar_navi1 ul ul ul li:hover ul {
   display: block;
 }
  
-/* ---------- Navigation vertical ----------- */
+/* ---------- Navigation vertical left ----------- */
 div.dokuwiki div#tpl_smplbar_navi2 {
   border: 1px solid __border__;
-  background-color: #eeeeee;
+  background-color: #ddddff;
   margin-left: auto;
   height: auto;
   margin: 0.2em 2em 0.5em 0;
@@ -116,7 +116,7 @@ div.dokuwiki div#tpl_smplbar_navi2 {
  
 div.dokuwiki div#tpl_smplbar_navi2 ul {
   display: block;
-  background-color: #eeeeee;
+  background-color: #ddddff;
   list-style: none;
   padding: 0em;
   padding-left: 0.8em;
@@ -125,7 +125,7 @@ div.dokuwiki div#tpl_smplbar_navi2 ul {
 }
 
 div.dokuwiki div#tpl_smplbar_navi2 ul li {
-  background-color: #eeeeee;
+  background-color: #ddddff;
   float: left;
   margin: 0;
   width: 10em;
@@ -197,6 +197,112 @@ div.dokuwiki div#tpl_smplbar_navi2 ul ul li:hover ul ul {
 div.dokuwiki div#tpl_smplbar_navi2 ul li:hover ul,
 div.dokuwiki div#tpl_smplbar_navi2 ul ul li:hover ul,
 div.dokuwiki div#tpl_smplbar_navi2 ul ul ul li:hover ul {
+  display: block;
+}
+ 
+div.dokuwiki .navi_clearer {
+  clear: both;
+  margin-bottom: 1.8em;
+}
+
+/* ---------- Navigation vertical right ----------- */
+div.dokuwiki div#tpl_smplbar_navi3 {
+  position: absolute;
+  right: 120px;
+  border: 1px solid __border__;
+  background-color: #ddddff;
+  float: right;
+  border-radius: 0.3em;
+  height: auto;
+}
+ 
+*+ html div.dokuwiki div#tpl_smplbar_navi3 {
+  height: auto;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 ul {
+  display: block;
+  background-color: #ddddff;
+  list-style: none;
+  padding: 0em;
+  padding-left: 0.8em;
+  margin: 0;
+  height: 1.8em;
+}
+
+div.dokuwiki div#tpl_smplbar_navi3 ul li {
+  background-color: #ddddff;
+  float: right;
+  margin: 0;
+  width: 10em;
+  height: 1.8em;
+} 
+
+ 
+div.dokuwiki div#tpl_smplbar_navi3 a {
+  display: block;
+  text-decoration: none;
+  border-bottom: none;
+  padding: 0em;
+  margin: 0;
+  height: 1.8em;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 a.wikilink2 {
+  border-bottom: none !important;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 a.urlextern,
+div.dokuwiki div#tpl_smplbar_navi3 a.interwiki {
+  padding: 0;
+  padding: 0.4em;
+  padding-left: 0.8em;
+  background-image: none;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 li:hover {
+  background-color: #aaaaed;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 a:hover {
+  background-color: #aaaaed;
+  text-decoration: underline;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 li {
+  margin: 0;
+  padding-left: 0.3em;
+  position: relative;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 ul ul {
+  display: none;
+  top: -0.5em;
+  right: 100%;
+  border: 1px solid __border__;
+  position: absolute;
+  height: auto;
+  border-radius: 0.3em;
+  z-index: 500;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 ul ul ul {
+  top: -0.5em;
+  right: 100%;
+  border: 1px solid __border__;
+  margin-top: 5px;
+  border-radius: 0.3em;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 ul ul,
+div.dokuwiki div#tpl_smplbar_navi3 ul li:hover ul ul,
+div.dokuwiki div#tpl_smplbar_navi3 ul ul li:hover ul ul {
+  display: none;
+}
+ 
+div.dokuwiki div#tpl_smplbar_navi3 ul li:hover ul,
+div.dokuwiki div#tpl_smplbar_navi3 ul ul li:hover ul,
+div.dokuwiki div#tpl_smplbar_navi3 ul ul ul li:hover ul {
   display: block;
 }
  
