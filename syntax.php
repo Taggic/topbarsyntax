@@ -42,7 +42,7 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
 /******************************************************************************/
 /* handle the match
 */   
-    function handle($match, $state, $pos, &$handler) {
+    function handle($match, $state, $pos, Doku_Handler $handler) {
         global $ID;
         $match = substr($match,strlen('{{topbarsyntax>'),-2); //strip markup from start and end
         //handle params
@@ -56,7 +56,7 @@ class syntax_plugin_topbarsyntax extends DokuWiki_Syntax_Plugin
 * @author Michael Klier <chi@chimeric.de>
 * modified by Taggic <taggic@t-online.de>
 */   
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         $width = $data[0];   // width of the main bar
         $orient = $data[1];  // orientation of the menu
 
