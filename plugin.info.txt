@@ -3,7 +3,7 @@
 base    topbarsyntax
 author  Taggic
 email   taggic@t-online.de
-date    2011-10-30
+date    2016-06-02
 name    topbarsyntax
-desc    delivers horizontal & vertical css based menu on a page wherever you want to have it
-url     http://www.fristercons.de/fcon/doku.php?id=tips:tips_topbar
+desc    delivers topbar as syntax plugin to be placed anywhere on the page
+url     http://www.dokuwiki.org/plugin:topbarsyntax
